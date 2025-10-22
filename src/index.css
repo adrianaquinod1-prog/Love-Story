@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --floral-1: #ff6b9a;
+  --floral-2: #ffb3c6;
+  --floral-3: #ffd6e0;
+  --foreground: #1f1724;
+}
+
+body {
+  @apply antialiased;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(180deg, rgba(255,107,154,0.08), rgba(255,179,198,0.03));
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Floral gradient utility */
+.bg-floral {
+  background: linear-gradient(135deg, var(--floral-1), var(--floral-2) 60%, var(--floral-3));
+}
+
+/* Card glass */
+.glass {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(6px);
+}
+
+/* Small helper */
+.center {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
